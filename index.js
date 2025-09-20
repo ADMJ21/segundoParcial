@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // Rutas
-app.use('/habitaciones', habitacionRouter);
+app.use('/', habitacionRouter);
 
 // Iniciar servidor
 const PORT = process.env.PORT || 3000;
