@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Habitaciones</title>
+</head>
+<body>
+    <h1>Habitaciones del Hotel</h1>
+    
+    <a href="/habitaciones/create">➕ Agregar Nueva Habitación</a>
+
+    <% if (habitaciones.length === 0) { %>
+        <p>No hay habitaciones registradas.</p>
+    <% } else { %>
+        <ul>
+            <% habitaciones.forEach(habitacion => { %>
+                <li>
+                    Habitación #<%= habitacion.noHabitacion %>
+                    - <a href="/habitaciones/<%= habitacion.id %>">Ver detalles</a>
+                </li>
+            <% }); %>
+        </ul>
+    <% } %>
+</body>
+</html>

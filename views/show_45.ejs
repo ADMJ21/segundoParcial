@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles de Habitación</title>
+</head>
+<body>
+    <% if (habitacion) { %>
+        <h1>Detalles de Habitación</h1>
+        <p><strong>ID:</strong> <%= habitacion.id %></p>
+        <p><strong>Número de Habitación:</strong> <%= habitacion.noHabitacion %></p>
+    <% } else { %>
+        <p>Habitación no encontrada</p>
+    <% } %>
+
+    <br>
+    <a href="/habitaciones">← Volver al listado</a>
+</body>
+</html>

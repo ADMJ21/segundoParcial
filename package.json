@@ -1,0 +1,21 @@
+{
+  "name": "parcial-ii",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Angel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
